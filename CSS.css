@@ -1,0 +1,115 @@
+:root {
+    --bg-color: #f5f0fa;
+    --sidebar-color: #dcd0f0;
+    --card-bg: #ffffff;
+    --primary-text: #4a3d5e;
+    --accent-color: #9d80d4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+}
+
+.dashboard-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background: var(--sidebar-color);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nav-menu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.nav-item {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--primary-text);
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-item:hover, .nav-item.active {
+    background: var(--card-bg);
+}
+
+.main-content {
+    flex: 1;
+}
+
+.welcome-banner {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.chart-section, .subjects-section {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.btn-upgrade, .btn-play {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-upgrade:hover, .btn-play:hover {
+    filter: brightness(1.1);
+}
